@@ -113,10 +113,10 @@ module Opscode
                 'package_name' => 'mysql51-server'
               },
               '5.5' => {
-                'package_name' => 'mysql-community-server'
+                'package_name' => 'mysql55-server'
               },
               '5.6' => {
-                'package_name' => 'mysql-community-server'
+                'package_name' => 'mysql56-server'
               }
             }
           },
