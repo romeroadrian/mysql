@@ -18,7 +18,7 @@ module MysqlCookbook
 
       def include_dir
         case node['platform_version'].to_i
-        when 2014, 2013, 7, 6
+        when 2015, 2014, 2013, 7, 6
           include_dir = '/etc/mysql/conf.d'
         when 5
           include_dir = "#{base_dir}/etc/mysql/conf.d"
@@ -28,7 +28,7 @@ module MysqlCookbook
 
       def prefix_dir
         case node['platform_version'].to_i
-        when 2014, 2013, 7, 6
+        when 2015, 2014, 2013, 7, 6
           prefix_dir =  '/usr'
         when 5
           case new_resource.parsed_version
@@ -45,7 +45,7 @@ module MysqlCookbook
 
       def lc_messages_dir
         case node['platform_version'].to_i
-        when 2014, 2013, 7, 6, 5
+        when 2015, 2014, 2013, 7, 6, 5
           lc_messages_dir = nil
         end
         lc_messages_dir
@@ -53,7 +53,7 @@ module MysqlCookbook
 
       def run_dir
         case node['platform_version'].to_i
-        when 2014, 2013, 7, 6
+        when 2015, 2014, 2013, 7, 6
           run_dir = '/var/run/mysqld'
         when 5
           case new_resource.parsed_version
@@ -81,7 +81,7 @@ module MysqlCookbook
 
       def pid_file
         case node['platform_version'].to_i
-        when 2014, 2013, 7, 6, 5
+        when 2015, 2014, 2013, 7, 6, 5
           pid_file = '/var/run/mysqld/mysql.pid'
         end
         pid_file
@@ -89,7 +89,7 @@ module MysqlCookbook
 
       def socket_file
         case node['platform_version'].to_i
-        when 2014, 2013, 7, 6, 5
+        when 2015, 2014, 2013, 7, 6, 5
           socket_file = '/var/lib/mysql/mysql.sock'
         end
         socket_file
@@ -97,7 +97,7 @@ module MysqlCookbook
 
       def service_name
         case node['platform_version'].to_i
-        when 2014, 2013, 7, 6
+        when 2015, 2014, 2013, 7, 6
           service_name = 'mysqld'
         when 5
           case new_resource.parsed_version

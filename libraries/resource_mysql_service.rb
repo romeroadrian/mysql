@@ -107,7 +107,7 @@ class Chef
           default_version = '5.0'
         when 2013, 6
           default_version = '5.1'
-        when 2014, 7
+        when 2015, 2014, 7
           default_version = '5.5'
         end
       when 'fedora'
